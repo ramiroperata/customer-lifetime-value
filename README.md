@@ -12,10 +12,7 @@ Este repositorio contiene el código y los recursos para predecir el Valor del C
     *   [Modelos Probabilísticos (BG/NBD, Gamma-Gamma)](#modelos-probabilisticos-bgnbd-gamma-gamma)
         *   [Beta-Geométrica/Distribución Binomial Negativa (BG/NBD)](#beta-geometricadistribucion-binomial-negativa-bgnbd)
         *   [Modelo Gamma-Gamma](#modelo-gamma-gamma)
-*   [Uso](#uso)
-*   [Dependencias](#dependencias)
 *   [Resultados](#resultados)
-*   [Contribuciones](#contribuciones)
 
 ## Descripción del Proyecto
 
@@ -40,7 +37,6 @@ El análisis exploratorio de datos se centra en comprender las características 
 *   **Visualizaciones:** Histogramas, diagramas de dispersión, etc., para identificar patrones y distribuciones.
 *   **Identificación de valores atípicos (outliers):** Uso de boxplots u otros métodos para detectar valores extremos.
 
-En particular, se presta atención a la distribución de la variable `MonetaryValue`, que a menudo presenta asimetría positiva.
 
 ## Ingeniería de Características (Feature Engineering)
 
@@ -48,10 +44,8 @@ A partir de los datos de transacciones, se crean las siguientes características
 
 *   `Recency`: Tiempo transcurrido desde la última compra del cliente (en días).
 *   `Frequency`: Número total de compras realizadas por el cliente.
-*   `T` (Tiempo): Tiempo transcurrido desde la primera compra del cliente (en días).
+*   `T` (Edad): Tiempo transcurrido desde la primera compra del cliente (en días).
 *   `MonetaryValue`: Valor monetario promedio de las compras del cliente.
-
-Se aplican transformaciones logarítmicas a `MonetaryValue` para reducir la asimetría y mejorar el rendimiento del modelo. Adicionalmente, se considera el uso de winsorización para mitigar el impacto de valores atípicos extremos.
 
 ## Modelado
 
@@ -74,8 +68,4 @@ El modelo Gamma-Gamma se utiliza para estimar el valor monetario promedio de las
 
 ## Resultados
 
-(Incluir ejemplos de los resultados obtenidos, como métricas de evaluación o visualizaciones de las predicciones de CLTV.)
-
-## Contribuciones
-
-Las contribuciones son bienvenidas. Por favor, abre un issue o un pull request si tienes alguna sugerencia o mejora.
+Podemos obervar como los clientes en Francia tienden a tener un CLV alto. Por otro lado, los clientes en Belgica tienden a tener un CLV bajo. Dado esto recomiendo aumentar el presupuesto en marketing para adquirir consumidores en Francia y disminuirlo en Belgica.
