@@ -27,7 +27,7 @@ El conjunto de datos utilizado en este proyecto contiene información sobre las 
 *   `InvoiceNo`: Número de la factura.
 *   `Quantity`: Cantidad del producto pedida.
 *   `UnitPrice`: Precio de una unidad.
-*   `StockCode	`: Identificador del producto.
+*   `StockCode`: Identificador del producto.
 
 
 ## Análisis Exploratorio de Datos (EDA)
