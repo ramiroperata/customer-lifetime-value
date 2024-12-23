@@ -25,9 +25,10 @@ El conjunto de datos utilizado en este proyecto contiene información sobre las 
 *   `CustomerID`: Identificador único del cliente.
 *   `InvoiceDate`: Fecha de la factura.
 *   `InvoiceNo`: Número de la factura.
-*   `MonetaryValue`: Valor monetario de la transacción.
+*   `Quantity`: Cantidad del producto pedida.
+*   `UnitPrice`: Precio de una unidad.
+*   `StockCode	`: Identificador del producto.
 
-(Añade más detalles sobre las columnas relevantes de tu dataset)
 
 ## Análisis Exploratorio de Datos (EDA)
 
